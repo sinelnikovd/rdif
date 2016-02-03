@@ -1,0 +1,199 @@
+extends ./template/template.jade
+
+block title
+	title Главная страница
+
+block content
+	section.section-1
+		.container
+			.row
+				.col-xs-12
+					img(src="img/logo.png", alt="").logo
+				.col-xs-12
+					.title
+						h1.section-1__title ВНУТРЕННИЙ ПОРТАЛ РОССИЙСКОГО <br>ФОНДА ПРЯМЫХ ИНВЕСТИЦИЙ
+						.hr.hr__border.hr_red.hr_center
+				.col-xs-12
+					a(href="http://www.rdif.ru/").section-1__link www.rdif.ru
+					span.section-1__date 2012 г.
+				.col-xs-12
+					ul.section-1__list
+						li.section-1__item
+							i.icon.icon_planning
+							span.section-1__item-text Проектирование
+						li.section-1__item
+							i.icon.icon_desing
+							span.section-1__item-text Дизайн
+						li.section-1__item
+							i.icon.icon_development
+							span.section-1__item-text Разработка
+						li.section-1__item
+							i.icon.icon_support
+							span.section-1__item-text Поддержка
+				.col-xs-12
+					i.icon.icon_down.section-1__down
+
+	section.section-2
+		.container
+			.row
+				.col-xs-12
+					.title
+						h2.section-2__title О ЗАКАЗЧИКЕ
+						.hr.hr__border.hr_red.hr_center
+					p.section-2__description Российский Фонд Прямых Инвестиций (РФПИ) – инвестиционный фонд, созданный правительством Российской Федерации для инвестиций в лидирующие компании наиболее быстрорастущих секторов экономики.
+					ul.section-2__list
+						li.section-2__item
+							p.section-2__top
+								span.section-2__number 2011
+								| г
+							p.section-2__item-text Создание по инициативе<br> Президента РФ
+						li.section-2__item
+							p.section-2__top
+								span.section-2__number $10
+								| млдр
+							p.section-2__item-text Зарезервированный<br> капитал фонда
+						li.section-2__item
+							p.section-2__top
+								span.section-2__number &gt;$2.5
+								| млрд
+							p.section-2__item-text Привлечено<br> в российскую экономику
+	section.section-3
+		.container
+			.row
+				.col-xs-12
+					.title
+						h2.section-3__title Задача
+						.hr.hr__border.hr_red.hr_center
+					p.section-3__description Для эффективного управления и оптимизации внутренних бизнес-процессов компании было принято решение о внедрении и использовании корпоративного портала «1С-Битрикс».
+					ul.section-3__list
+						li.section-3__item
+							i.icon.icon_bitrix
+							p.section-3__item-text.section-3__item-text_bitrix Установка и стандартная настройка 1с битрикс
+						li.section-3__item
+							i.icon.icon_mobile
+							p.section-3__item-text.section-3__item-text_mobile Дизайн корпортала
+						li.section-3__item
+							i.icon.icon_1c
+							p.section-3__item-text.section-3__item-text_1c Интеграция с производственным календарем из 1С
+	section.section-4
+		.container
+			.row
+				.col-xs-6.col-xs-offset-6
+					.title.section-4__title-parent
+						h2.section-4__title ОСОБЕННЫЙ ДИЗАЙН
+						.hr.hr__border.hr_white
+					p.section-4__description Нами был разработан и внедрен индивидуальный дизайн в соответствии с фирменным стилем компании и внедрен индивидуальный дизайн в соответствии с фирменным стилем компании.
+	section.section-5
+		.container
+			.row
+				.col-xs-12
+					.title
+						h2.section-5__title СИНХРОНИЗАЦИЯ С 1С
+						.hr.hr__border.hr_red.hr_center
+					p.section-5__description Мы развернули портал на платформе "1С Битрикс: Внутренний портал государственной организации", установили на него CRM-систему, реализовали английскую версию портала и синхронизировали его с «1С Предприятие 8.2: Зарплата и управление персоналом»
+				.col-xs-12
+					ul.section-5__navigation.sync
+						li.sync__item Данные о зарплате
+						li.sync__item График отсутствия
+						li.sync__item.active Документооборот
+				.col-xs-12
+					.sync__description
+						ul.section-5__list
+							li.section-5__item Предусмотрена возможность делегирования функций, чтобы ассистент мог выполнять задание за своего руководителя;
+							li.section-5__item Для каждого из сотрудников настраивается доступ к типу документов;
+							li.section-5__item Доступен расширенный поиск документов по названию, номеру, дате и категории;
+							li.section-5__item Реализована возможность создания документов по шаблону: выбирается категория и шаблон,  заполняются необходимые поля и генерируется документ doc
+
+					.section-5__divece.divece
+						img(src="img/slide1.jpg", alt="").divece_img
+
+	section.section-6
+		.container
+			.row
+				.col-xs-12
+					.title
+						h2.section-6__title ТЕХПОДДЕРЖКА
+						.hr.hr__border.hr_red.hr_center
+					p.section-6__description В рамках технической поддержки, команда РФПИ ставила перед нами все более сложные и интересные задачи:
+				.col-xs-12
+					.tech-item.section-6__tech-item
+						span.tech-item__number 1
+						img(src="img/tech1.jpg", alt="").tech-item__picture
+						.tech-item__desc
+							h2.tech-item__title СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ
+							p.tech-item__text Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.
+					.tech-item.section-6__tech-item
+						span.tech-item__number 1
+						img(src="img/tech1.jpg", alt="").tech-item__picture
+						.tech-item__desc
+							h2.tech-item__title СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ
+							p.tech-item__text Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.
+
+					.tech-item.section-6__tech-item
+						span.tech-item__number 1
+						img(src="img/tech1.jpg", alt="").tech-item__picture
+						.tech-item__desc
+							h2.tech-item__title СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ
+							p.tech-item__text Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.
+					.tech-item.section-6__tech-item
+						span.tech-item__number 1
+						img(src="img/tech1.jpg", alt="").tech-item__picture
+						.tech-item__desc
+							h2.tech-item__title СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ
+							p.tech-item__text Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.
+					.tech-item.section-6__tech-item
+						span.tech-item__number 1
+						img(src="img/tech1.jpg", alt="").tech-item__picture
+						.tech-item__desc
+							h2.tech-item__title СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ
+							p.tech-item__text Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.
+
+	section.section-7
+		.container
+			.row
+				.col-xs-6.col-xs-offset-6
+					.title
+						h2.section-7__title МОБИЛЬНАЯ ВЕРСИЯ
+						.hr.hr__border.hr_white
+					p.section-7__description Потребность пользователей работать с порталом вне офиса определила необходимость в мобильной версии. 
+					p.section-7__description Мы разработали мобильную версию разделов по отчетности, адптировали ее под планшеты.
+
+	section.section-8
+		.container
+			.row
+				.col-xs-12
+					.title
+						h2.section-8__title В ИТОГЕ
+						.hr.hr__border.hr_red.hr_center
+					p.section-8__description Внедрение корпоративного портала позволило в короткие сроки запустить эффективную систему внутренних коммуникаций, оптимизировать ключевые бизнес-процессы и выстроить работу с корпоративными документами согласно единому стандарту фонда.
+					p.section-8__description Сейчас мы продолжаем разрабатывать новые модули, публикуем материалы, ведем контроль качества компонентов и материалов.
+				.col-xs-12
+					ul.section-8__list
+						li.section-8__item
+							p.section-8__top 3
+							p.section-8__item-text уникальных сложнейших модуля
+						li.section-8__item
+							p.section-8__top 3 года
+							p.section-8__item-text эффективного сотрудничества
+						li.section-8__item
+							p.section-8__top 24/7
+							p.section-8__item-text поддержка работы портала
+
+
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

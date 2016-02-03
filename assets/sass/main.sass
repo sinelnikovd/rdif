@@ -1,0 +1,334 @@
+@import "bourbon"
+@import "_normalize.sass"
+@import "_vars.sass"
+@import "_fonts.sass"
+
+@import "libs/sprite.sass"
+@import "libs/owl.carousel.sass"
+
+
+*::-webkit-input-placeholder
+	color: #424242
+	opacity: 1
+
+
+*:-moz-placeholder
+	color: #424242
+	opacity: 1
+
+*::-moz-placeholder
+	color: #424242
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #424242
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #424242
+
+body input:required:valid,
+body textarea:required:valid
+	color: #424242
+
+body
+	font-size: 17px
+	min-width: 1200px
+	position: relative
+	line-height: 1.3
+	font-family: "HelveticaNeueLight", $helvetica
+	font-weight: normal
+	overflow-x: hidden
+	color: #1b1b1b
+	position: relative
+
+.container
+	width: 1200px
+
+
+/* icon */
+.icon
+	display: inline-block
+.icon_planning
+	+sprite($s-planning)
+.icon_desing
+	+sprite($s-desing)
+.icon_development
+	+sprite($s-development)
+.icon_support
+	+sprite($s-support)
+.icon_down
+	+sprite($s-down)
+.icon_bitrix
+	+sprite($s-bitrix)
+.icon_mobile
+	+sprite($s-mobile)
+.icon_1c
+	+sprite($s-1c)
+.icon_check
+	+sprite($s-check)
+/* end icon */
+
+/* .hr */
+.title
+	position: relative
+	text-transform: uppercase
+.hr
+	width: 162px
+	height: 1px
+	position: absolute
+	bottom: 0
+	left: 0
+.hr_red
+	background-color: #ff443f
+.hr_white
+	background-color: #fff
+.hr_center
+	left: 50%
+	+transform(translateX(-50%))
+/* end .hr */
+
+
+/* .section-1 */
+.section-1
+	background-image: url('img/bg.jpg')
+	background-position: center center
+	background-size: cover
+	text-align: center
+	padding: 145px 0 25px
+	box-sizing: border-box
+.section-1__title
+	font-size: 55px
+	font-family: "HelveticaNeueUltralight" , $helvetica
+	font-weight: normal
+	color: #fff
+	text-align: center
+	margin: 30px 0 0
+	line-height: 1.2
+	padding-bottom: 15px
+.section-1__link
+	display: block
+	color: #fff
+	font-size: 32px
+	font-family: "HelveticaNeueUltralight" , $helvetica
+	font-weight: normal
+	margin-top: 20px
+	text-decoration: none
+	&:hover
+		color: #ff443f
+		text-decoration: none
+.section-1__date
+	font-size: 20px
+	font-family: "HelveticaNeueUltralight" , $helvetica
+	font-weight: normal
+	color: #fff
+.section-1__list
+	list-style-type: none
+	margin: 70px 0 0
+	padding: 0
+	font-size: 0
+.section-1__item
+	display: inline-block
+	margin: 0 40px
+.section-1__item-text
+	display: block
+	color: #fff
+	margin-top: 10px
+.section-1__down
+	margin-top: 75px
+	cursor: pointer
+/* end .section-1 */
+
+
+/* .section-2 */
+.section-2
+	background-image: url('img/bg2.jpg')
+	background-position: center center
+	background-size: cover
+	text-align: center
+	padding: 116px 0 72px
+	box-sizing: border-box
+.section-2__title
+	font-size: 53px
+	font-family: "HelveticaNeueUltralight" , $helvetica
+	font-weight: normal
+	color: #1b1b1b
+	text-align: center
+	margin: 0
+	line-height: 1.2
+	padding-bottom: 15px
+.section-2__description
+	margin: 35px 250px 0
+	line-height: 1.4
+.section-2__list
+	list-style-type: none
+	margin: 0
+	padding: 0
+	font-size: 0
+	text-align: center
+.section-2__item
+	width: 33%
+	display: inline-block
+	margin: 50px 0 0
+	vertical-align: top
+.section-2__top
+	font-size: 52px
+	font-family: "HelveticaNeueUltralight" , $helvetica
+	font-weight: normal
+	margin: 0
+.section-2__number
+	font-size: 83px
+.section-2__item-text
+	font-size: 15px
+	margin: 5px 0 0
+	text-align: center
+/* end .section-2 */
+
+/* .section-3 */
+.section-3
+	padding: 116px 0 200px
+	text-align: center
+.section-3__title
+	font-size: 53px
+	font-family: "HelveticaNeueUltralight" , $helvetica
+	font-weight: normal
+	color: #1b1b1b
+	text-align: center
+	margin: 0
+	line-height: 1.3
+	padding-bottom: 15px
+.section-3__description
+	margin: 28px 18% 0
+	line-height: 1.4
+.section-3__list
+	list-style-type: none
+	margin: 110px 0 0
+	padding: 0
+	font-size: 0
+.section-3__item
+	width: 240px
+	display: inline-block
+	font-size: 17px
+	vertical-align: top
+	margin: 0
+.section-3__item-text
+	margin: 0
+	font-size: 15px
+.section-3__item-text_bitrix
+	margin-top: 43px
+.section-3__item-text_mobile
+	margin-top: 35px
+.section-3__item-text_1c
+	margin-top: 37px
+/* end .section-3 */
+
+
+/* .section-4 */
+.section-4
+	background-image: url('img/bg_desing.jpg')
+	background-position: center top
+	background-size: cover
+	background-repeat: no-repeat
+	background-color: #2a3337
+	padding: 185px 0 476px
+	color: #fff
+.section-4__title-parent
+	margin-left: 20px
+.section-4__title
+	font-size: 53px
+	font-family: "HelveticaNeueUltralight" , $helvetica
+	font-weight: normal
+	text-align: left
+	margin: 0
+	line-height: 1.2
+	padding-bottom: 15px
+.section-4__description
+	margin: 35px 0 0 20px
+	font-size: 17px
+	width: 80%
+/* end .section-4 */
+
+/* sync */
+.sync
+	list-style-type: none
+	width: 639px
+	box-sizing: border-box
+	border-radius: 5px
+	border: 1px solid #ff443f
+	padding: 0
+	display: block
+	+clearfix
+.sync__item
+	text-align: center
+	width: 33.33333333333333333333333333333%
+	height: 50px
+	padding-top: 15px
+	border-right: 1px solid #ff443f
+	color: #2e2e2e
+	float: left
+	cursor: pointer
+	&:last-child
+		border-right: 0
+	&.active
+		color: #fff
+		position: relative
+		background-color: #ff5955
+		&:after
+			content: ''
+			position: absolute
+			border: 0
+			top: 100%
+			left: 50%
+			+transform(translateX(-50%))
+			width: 0
+			height: 0
+			border-left: 10px solid transparent
+			border-right: 10px solid transparent
+			border-top: 10px solid #ff5955
+
+.sync__description
+	margin-top: 60px
+
+/* end sync */
+
+
+/* .divece */
+.divece
+/* end .divece */
+
+/* .section-5 */
+.section-5
+	padding: 114px 0 476px
+.section-5__title
+	font-size: 53px
+	font-family: "HelveticaNeueUltralight" , $helvetica
+	font-weight: normal
+	text-align: left
+	margin: 0
+	line-height: 1.2
+	padding-bottom: 15px
+	text-align: center
+.section-5__description
+	text-align: center
+	margin: 36px 16% 0
+	line-height: 1.4
+.section-5__navigation
+	margin: 59px auto 0
+
+.section-5__list
+	list-style-type: none
+	margin: 0 13%
+	padding: 0
+.section-5__list-icon
+	margin-right: 10px
+.section-5__item
+	background-image: url('img/check.png')
+	background-repeat: no-repeat
+	background-position: 0 2px
+	margin: 27px 0
+	padding: 0 0 0 27px
+/* end .section-5 */
+
+//ALWAYS END
+//@import "_media.sass"
