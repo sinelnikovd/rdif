@@ -79,14 +79,15 @@ body
 	height: 1px
 	position: absolute
 	bottom: 0
-	left: 0
+	left: 50%
 .hr_red
 	background-color: #ff443f
 .hr_white
 	background-color: #fff
 .hr_center
-	left: 50%
 	+transform(translateX(-50%))
+.hr_left
+	left: 0
 /* end .hr */
 
 
@@ -295,11 +296,24 @@ body
 
 /* .divece */
 .divece
+	background-image: url('img/device.png')
+	background-repeat: no-repeat
+	background-position: center bottom
+	width: 946px
+	height: 675px
+	margin: 97px auto 0
+	position: relative
+.divece__slider
+	position: absolute
+	top: 39px
+	left: 116px
+	width: 708px
+	height: 531px
 /* end .divece */
 
 /* .section-5 */
 .section-5
-	padding: 114px 0 476px
+	padding: 114px 0 79px
 .section-5__title
 	font-size: 53px
 	font-family: "HelveticaNeueUltralight" , $helvetica
@@ -329,6 +343,189 @@ body
 	margin: 27px 0
 	padding: 0 0 0 27px
 /* end .section-5 */
+
+
+/* .tech-item */
+.tech-items
+	margin-top: 123px
+	padding-left: 107px
+	box-sizing: border-box
+.tech-item
+	border-left: 1px solid #bfbfbf
+	padding: 0 0 40px
+	position: relative
+	+clearfix
+.tech-item__line
+	position: absolute
+	top: 0
+	bottom: 0
+	height: 100%
+	width: 1px
+	z-index: 1
+	background-color: #bfbfbf
+.tech-item__line_img
+	left: 123px
+.tech-item__line_desc
+	left: 635px
+.tech__line
+	background-color: #bfbfbf
+	width: 637px
+	height: 1px
+.tech-item__number
+	position: absolute
+	top: 60px
+	left: -29px
+	width: 58px
+	height: 58px
+	border: 1px solid #bfbfbf
+	background-color: #f5f5f5
+	border-radius: 50%
+	text-align: center
+	box-sizing: border-box
+	line-height: 1.99
+	font-size: 30px
+	font-family: "HelveticaNeueUltralight" , $helvetica
+	font-weight: normal
+	color: #7f7f7f
+	&.active
+		background-color: #ff5955
+		border-color: #ff5955
+		color: #fff
+.tech-item__number_no_padding
+	top: 0
+.tech-item__miniature
+	padding-top: 60px
+	position: relative
+	z-index: 2
+	float: left
+	margin-left: 61px
+	background-color: #f5f5f5
+	padding-bottom: 10px
+.tech-item__miniature_no_padding
+	padding-top: 0
+.tech-item__desc
+	padding-top: 60px
+	position: relative
+	z-index: 2
+	margin-left: 33px
+	width: 450px
+	float: left
+	background-color: #f5f5f5
+	padding-bottom: 10px
+.tech-item__desc_no_padding
+	padding-top: 0
+.tech-item__title
+	margin: 0
+	font-size: 35px
+	font-family: "HelveticaNeueUltralight" , $helvetica
+	font-weight: normal
+	line-height: 1.1
+.tech-item__paragraph
+	font-size: 15px
+	line-height: 1.5
+	margin: 20px 0 0
+.tech-item__text
+	margin: 42px 0 0
+
+.tech-item__head-line
+	position: absolute
+	bottom: 0
+	width: 10px
+	height: 1px
+	background-color: #bfbfbf
+.tech-item__head-line_img
+	left: 57px
+.tech-item__head-line_desc
+	left: 58px
+/* end .tech-item */
+
+/* .section-6 */
+.section-6
+	padding: 114px 0 101px
+	background-color: #f5f5f5
+.section-6__title
+	font-size: 53px
+	font-family: "HelveticaNeueUltralight" , $helvetica
+	font-weight: normal
+	text-align: left
+	margin: 0
+	line-height: 1.2
+	padding-bottom: 15px
+	text-align: center
+.section-6__description
+	text-align: center
+	margin: 33px 30% 0
+	line-height: 1.4
+
+/* end section-6 */
+
+
+
+/* .section-7 */
+.section-7
+	background-image: url('img/bg_mobile.jpg')
+	background-position: center top
+	background-size: cover
+	background-repeat: no-repeat
+	background-color: #2a3337
+	padding: 146px 0 653px
+	color: #fff
+.section-7__title-parent
+	margin-left: 20px
+.section-7__title
+	font-size: 53px
+	font-family: "HelveticaNeueUltralight" , $helvetica
+	font-weight: normal
+	text-align: left
+	margin: 0
+	line-height: 1.2
+	padding-bottom: 15px
+.section-7__description
+	margin: 35px 0 0 20px
+	font-size: 17px
+	width: 80%
+/* end .section-7 */
+
+/* .section-8 */
+.section-8
+	padding: 114px 0 101px
+	background-color: #f5f5f5
+.section-8__title
+	font-size: 53px
+	font-family: "HelveticaNeueUltralight" , $helvetica
+	font-weight: normal
+	text-align: left
+	margin: 0 0 33px
+	line-height: 1.2
+	padding-bottom: 15px
+	text-align: center
+.section-8__description
+	text-align: center
+	margin: 20px 17% 0
+	line-height: 1.2
+.section-8__list
+	list-style-type: none
+	margin: 77px 0 0
+	padding: 0
+	font-size: 0
+	text-align: center
+.section-8__item
+	display: inline-block
+	font-size: 17px
+	margin: 0 40px
+	vertical-align: top
+.section-8__number
+	font-size: 85px
+	color: #1c1c1c
+.section-8__top
+	font-size: 51px
+	font-family: "HelveticaNeueUltralight" , $helvetica
+	font-weight: normal
+	margin: 0
+.section-8__item-text
+	font-size: 17px
+	margin: 0 15%
+/* end .section-8 */
 
 //ALWAYS END
 //@import "_media.sass"

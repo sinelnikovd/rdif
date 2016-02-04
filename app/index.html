@@ -53,15 +53,15 @@
             <p class="section-2__description">Российский Фонд Прямых Инвестиций (РФПИ) – инвестиционный фонд, созданный правительством Российской Федерации для инвестиций в лидирующие компании наиболее быстрорастущих секторов экономики.</p>
             <ul class="section-2__list">
               <li class="section-2__item">
-                <p class="section-2__top"><span class="section-2__number">2011</span>г</p>
+                <p class="section-2__top"><span id="year" class="section-2__number">2011</span>г</p>
                 <p class="section-2__item-text">Создание по инициативе<br> Президента РФ</p>
               </li>
               <li class="section-2__item">
-                <p class="section-2__top"><span class="section-2__number">$10</span>млдр</p>
+                <p class="section-2__top"><span class="section-2__number">$<span id="numone">10</span></span>млдр</p>
                 <p class="section-2__item-text">Зарезервированный<br> капитал фонда</p>
               </li>
               <li class="section-2__item">
-                <p class="section-2__top"><span class="section-2__number">&gt;$2.5</span>млрд</p>
+                <p class="section-2__top"><span class="section-2__number">&gt;$<span id="numtwo">2.5</span></span>млрд</p>
                 <p class="section-2__item-text">Привлечено<br> в российскую экономику</p>
               </li>
             </ul>
@@ -79,13 +79,13 @@
             </div>
             <p class="section-3__description">Для эффективного управления и оптимизации внутренних бизнес-процессов компании было принято решение о внедрении и использовании корпоративного портала «1С-Битрикс».</p>
             <ul class="section-3__list">
-              <li class="section-3__item"><i class="icon icon_bitrix"></i>
+              <li data-elmove="true" data-dur="1.3" data-delay="0" data-left="0" data-top="200" class="section-3__item"><i class="icon icon_bitrix"></i>
                 <p class="section-3__item-text section-3__item-text_bitrix">Установка и стандартная настройка 1с битрикс</p>
               </li>
-              <li class="section-3__item"><i class="icon icon_mobile"></i>
+              <li data-elmove="true" data-dur="1.3" data-delay="0.3" data-left="0" data-top="200" class="section-3__item"><i class="icon icon_mobile"></i>
                 <p class="section-3__item-text section-3__item-text_mobile">Дизайн корпортала</p>
               </li>
-              <li class="section-3__item"><i class="icon icon_1c"></i>
+              <li data-elmove="true" data-dur="1.3" data-delay="0.6" data-left="0" data-top="200" class="section-3__item"><i class="icon icon_1c"></i>
                 <p class="section-3__item-text section-3__item-text_1c">Интеграция с производственным календарем из 1С</p>
               </li>
             </ul>
@@ -99,7 +99,7 @@
           <div class="col-xs-6 col-xs-offset-6">
             <div class="title section-4__title-parent">
               <h2 class="section-4__title">ОСОБЕННЫЙ ДИЗАЙН</h2>
-              <div class="hr hr__border hr_white"></div>
+              <div class="hr hr__border hr_white hr_left"></div>
             </div>
             <p class="section-4__description">Нами был разработан и внедрен индивидуальный дизайн в соответствии с фирменным стилем компании и внедрен индивидуальный дизайн в соответствии с фирменным стилем компании.</p>
           </div>
@@ -118,21 +118,45 @@
           </div>
           <div class="col-xs-12">
             <ul class="section-5__navigation sync">
-              <li class="sync__item">Данные о зарплате</li>
+              <li class="sync__item active">Данные о зарплате</li>
               <li class="sync__item">График отсутствия</li>
-              <li class="sync__item active">Документооборот</li>
+              <li class="sync__item">Документооборот</li>
             </ul>
           </div>
           <div class="col-xs-12">
-            <div class="sync__description">
-              <ul class="section-5__list">
-                <li class="section-5__item">Предусмотрена возможность делегирования функций, чтобы ассистент мог выполнять задание за своего руководителя;</li>
-                <li class="section-5__item">Для каждого из сотрудников настраивается доступ к типу документов;</li>
-                <li class="section-5__item">Доступен расширенный поиск документов по названию, номеру, дате и категории;</li>
-                <li class="section-5__item">Реализована возможность создания документов по шаблону: выбирается категория и шаблон,  заполняются необходимые поля и генерируется документ doc</li>
-              </ul>
+            <div class="sync__descriptions">
+              <div class="sync__description">
+                <ul class="section-5__list">
+                  <li class="section-5__item">Предусмотрена возможность делегирования функций, чтобы ассистент мог выполнять задание за своего руководителя;</li>
+                  <li class="section-5__item">Для каждого из сотрудников настраивается доступ к типу документов;</li>
+                  <li class="section-5__item">Доступен расширенный поиск документов по названию, номеру, дате и категории;</li>
+                  <li class="section-5__item">Реализована возможность создания документов по шаблону: выбирается категория и шаблон,  заполняются необходимые поля и генерируется документ doc</li>
+                </ul>
+              </div>
+              <div class="sync__description">
+                <ul class="section-5__list">
+                  <li class="section-5__item">Предусмотрена возможность делегирования функций, чтобы ассистент мог выполнять задание за своего руководителя;</li>
+                  <li class="section-5__item">Для каждого из сотрудников настраивается доступ к типу документов;</li>
+                  <li class="section-5__item">Доступен расширенный поиск документов по названию, номеру, дате и категории;</li>
+                  <li class="section-5__item">Реализована возможность создания документов по шаблону: выбирается категория и шаблон,  заполняются необходимые поля и генерируется документ doc</li>
+                </ul>
+              </div>
+              <div class="sync__description">
+                <ul class="section-5__list">
+                  <li class="section-5__item">Предусмотрена возможность делегирования функций, чтобы ассистент мог выполнять задание за своего руководителя;</li>
+                  <li class="section-5__item">Для каждого из сотрудников настраивается доступ к типу документов;</li>
+                  <li class="section-5__item">Доступен расширенный поиск документов по названию, номеру, дате и категории;</li>
+                  <li class="section-5__item">Реализована возможность создания документов по шаблону: выбирается категория и шаблон,  заполняются необходимые поля и генерируется документ doc</li>
+                </ul>
+              </div>
             </div>
-            <div class="section-5__divece divece"><img src="img/slide1.jpg" alt="" class="divece_img"></div>
+            <div class="section-5__divece divece">
+              <div class="divece__slider">
+                <div class="divece__item"><img src="img/slide1.jpg" alt="" class="divece_img"></div>
+                <div class="divece__item"><img src="img/slide1.jpg" alt="" class="divece_img"></div>
+                <div class="divece__item"><img src="img/slide1.jpg" alt="" class="divece_img"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -147,36 +171,93 @@
             </div>
             <p class="section-6__description">В рамках технической поддержки, команда РФПИ ставила перед нами все более сложные и интересные задачи:</p>
           </div>
-          <div class="col-xs-12">
-            <div class="tech-item section-6__tech-item"><span class="tech-item__number">1</span><img src="img/tech1.jpg" alt="" class="tech-item__picture">
-              <div class="tech-item__desc">
-                <h2 class="tech-item__title">СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ</h2>
-                <p class="tech-item__text">Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.</p>
+          <div class="col-xs-12 tech-items">
+            <div data-elmove="true" data-dur="1" data-delay="0" data-left="0" data-top="-200" data-offset="0.3" class="tech-item-animate">
+              <div class="tech-item">
+                <div class="tech-item__line tech-item__line_img"></div>
+                <div class="tech-item__line tech-item__line_desc"></div><span class="tech-item__number tech-item__number_no_padding">1</span>
+                <div class="tech-item__miniature tech-item__miniature_no_padding">
+                  <div class="tech-item__head-line tech-item__head-line_img"></div><img src="img/tech1.jpg" alt="" class="tech-item__picture">
+                </div>
+                <div class="tech-item__desc tech-item__desc_no_padding">
+                  <div class="tech-item__head-line tech-item__head-line_desc"></div>
+                  <h2 class="tech-item__title">Сотрудники на испытательном сроке</h2>
+                  <div class="tech-item__text">
+                    <p class="tech-item__paragraph">Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.</p>
+                  </div>
+                </div>
               </div>
+              <div class="tech__line"></div>
             </div>
-            <div class="tech-item section-6__tech-item"><span class="tech-item__number">1</span><img src="img/tech1.jpg" alt="" class="tech-item__picture">
-              <div class="tech-item__desc">
-                <h2 class="tech-item__title">СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ</h2>
-                <p class="tech-item__text">Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.</p>
+            <div data-elmove="true" data-dur="1" data-delay="0" data-left="0" data-top="-200" data-offset="0.7" class="tech-item-animate">
+              <div class="tech-item">
+                <div class="tech-item__line tech-item__line_img"></div>
+                <div class="tech-item__line tech-item__line_desc"></div><span class="tech-item__number">2</span>
+                <div class="tech-item__miniature">
+                  <div class="tech-item__head-line tech-item__head-line_img"></div><img src="img/tech2.jpg" alt="" class="tech-item__picture">
+                </div>
+                <div class="tech-item__desc">
+                  <div class="tech-item__head-line tech-item__head-line_desc"></div>
+                  <h2 class="tech-item__title">Оценка сотрудников</h2>
+                  <div class="tech-item__text">
+                    <p class="tech-item__paragraph">Мы разработали модули для различных внутрених отчетов компании. Например, для налаживания эфективной оценки сотрудников был создан раздел "Годовая оценка деятельности"</p>
+                  </div>
+                </div>
               </div>
+              <div class="tech__line"></div>
             </div>
-            <div class="tech-item section-6__tech-item"><span class="tech-item__number">1</span><img src="img/tech1.jpg" alt="" class="tech-item__picture">
-              <div class="tech-item__desc">
-                <h2 class="tech-item__title">СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ</h2>
-                <p class="tech-item__text">Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.</p>
+            <div data-elmove="true" data-dur="1" data-delay="0" data-left="0" data-top="-200" data-offset="0.7" class="tech-item-animate">
+              <div class="tech-item">
+                <div class="tech-item__line tech-item__line_img"></div>
+                <div class="tech-item__line tech-item__line_desc"></div><span class="tech-item__number">3</span>
+                <div class="tech-item__miniature">
+                  <div class="tech-item__head-line tech-item__head-line_img"></div><img src="img/tech3.jpg" alt="" class="tech-item__picture">
+                </div>
+                <div class="tech-item__desc">
+                  <div class="tech-item__head-line tech-item__head-line_desc"></div>
+                  <h2 class="tech-item__title">Отчет WEEKLY REPPORT</h2>
+                  <div class="tech-item__text">
+                    <p class="tech-item__paragraph">Еженедельно и ежемесячно пользователям из группы "HR Manager" отсылается специолезированная отчетность.</p>
+                    <p class="tech-item__paragraph">Все проекты создаются и редактируются в разделе "Companies and Project". Для данного раздела делается отдельный специолизированный бэкап для возможности контроля изменений.</p>
+                  </div>
+                </div>
               </div>
+              <div class="tech__line"></div>
             </div>
-            <div class="tech-item section-6__tech-item"><span class="tech-item__number">1</span><img src="img/tech1.jpg" alt="" class="tech-item__picture">
-              <div class="tech-item__desc">
-                <h2 class="tech-item__title">СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ</h2>
-                <p class="tech-item__text">Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.</p>
+            <div data-elmove="true" data-dur="1" data-delay="0" data-left="0" data-top="-200" data-offset="0.7" class="tech-item-animate">
+              <div class="tech-item">
+                <div class="tech-item__line tech-item__line_img"></div>
+                <div class="tech-item__line tech-item__line_desc"></div><span class="tech-item__number">4</span>
+                <div class="tech-item__miniature">
+                  <div class="tech-item__head-line tech-item__head-line_img"></div><img src="img/tech4.jpg" alt="" class="tech-item__picture">
+                </div>
+                <div class="tech-item__desc">
+                  <div class="tech-item__head-line tech-item__head-line_desc"></div>
+                  <h2 class="tech-item__title">Анкеты 360 review</h2>
+                  <div class="tech-item__text">
+                    <p class="tech-item__paragraph">Оценка "360 градусов" - это получение данных о действиях человека в реальных рабочих ситуациях и о проявленных им деловых качествах. Информация при этом, получают от людей, общающихся с человеком на разных уровнях: начальника, коллег, подчиненного и клиентов.</p>
+                  </div>
+                </div>
               </div>
+              <div class="tech__line"></div>
             </div>
-            <div class="tech-item section-6__tech-item"><span class="tech-item__number">1</span><img src="img/tech1.jpg" alt="" class="tech-item__picture">
-              <div class="tech-item__desc">
-                <h2 class="tech-item__title">СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ</h2>
-                <p class="tech-item__text">Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.</p>
+            <div data-elmove="true" data-dur="1" data-delay="0" data-left="0" data-top="-200" data-offset="0.7" class="tech-item-animate">
+              <div class="tech-item">
+                <div class="tech-item__line tech-item__line_img"></div>
+                <div class="tech-item__line tech-item__line_desc"></div><span class="tech-item__number">5</span>
+                <div class="tech-item__miniature">
+                  <div class="tech-item__head-line tech-item__head-line_img"></div><img src="img/tech5.jpg" alt="" class="tech-item__picture">
+                </div>
+                <div class="tech-item__desc">
+                  <div class="tech-item__head-line tech-item__head-line_desc"></div>
+                  <h2 class="tech-item__title">Модуль KPI</h2>
+                  <div class="tech-item__text">
+                    <p class="tech-item__paragraph">Работа по KPI позволяет специолистам лучше понимать, что им нужно делать, чтобы быть эффективными. Данный модуль позволяем выставлять сотрудникам цели, которые должны быть достигнуты на определанный период.</p>
+                    <p class="tech-item__paragraph">А затем другие сотрудники могут оценить и оставить комментарий, насколько достигнута данная цель.</p>
+                  </div>
+                </div>
               </div>
+              <div class="tech__line"></div>
             </div>
           </div>
         </div>
@@ -186,9 +267,9 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-6 col-xs-offset-6">
-            <div class="title">
+            <div class="title section-7__title-parent">
               <h2 class="section-7__title">МОБИЛЬНАЯ ВЕРСИЯ</h2>
-              <div class="hr hr__border hr_white"></div>
+              <div class="hr hr__border hr_white hr_left"></div>
             </div>
             <p class="section-7__description">Потребность пользователей работать с порталом вне офиса определила необходимость в мобильной версии. </p>
             <p class="section-7__description">Мы разработали мобильную версию разделов по отчетности, адптировали ее под планшеты.</p>
@@ -210,15 +291,15 @@
           <div class="col-xs-12">
             <ul class="section-8__list">
               <li class="section-8__item">
-                <p class="section-8__top">3</p>
+                <p class="section-8__top"><span class="section-8__number">3</span></p>
                 <p class="section-8__item-text">уникальных сложнейших модуля</p>
               </li>
               <li class="section-8__item">
-                <p class="section-8__top">3 года</p>
+                <p class="section-8__top"><span class="section-8__number">3</span> года</p>
                 <p class="section-8__item-text">эффективного сотрудничества</p>
               </li>
               <li class="section-8__item">
-                <p class="section-8__top">24/7</p>
+                <p class="section-8__top"><span class="section-8__number">24/7</span></p>
                 <p class="section-8__item-text">поддержка работы портала</p>
               </li>
             </ul>

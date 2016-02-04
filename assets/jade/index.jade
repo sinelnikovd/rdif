@@ -44,19 +44,22 @@ block content
 					ul.section-2__list
 						li.section-2__item
 							p.section-2__top
-								span.section-2__number 2011
+								span.section-2__number#year 2011
 								| г
 							p.section-2__item-text Создание по инициативе<br> Президента РФ
 						li.section-2__item
 							p.section-2__top
-								span.section-2__number $10
+								span.section-2__number $
+									span#numone 10
 								| млдр
 							p.section-2__item-text Зарезервированный<br> капитал фонда
 						li.section-2__item
 							p.section-2__top
-								span.section-2__number &gt;$2.5
+								span.section-2__number &gt;$
+									span#numtwo 2.5
 								| млрд
 							p.section-2__item-text Привлечено<br> в российскую экономику
+
 	section.section-3
 		.container
 			.row
@@ -66,23 +69,25 @@ block content
 						.hr.hr__border.hr_red.hr_center
 					p.section-3__description Для эффективного управления и оптимизации внутренних бизнес-процессов компании было принято решение о внедрении и использовании корпоративного портала «1С-Битрикс».
 					ul.section-3__list
-						li.section-3__item
+						li.section-3__item(data-elmove="true" data-dur="1.3" data-delay="0" data-left="0" data-top="200")
 							i.icon.icon_bitrix
 							p.section-3__item-text.section-3__item-text_bitrix Установка и стандартная настройка 1с битрикс
-						li.section-3__item
+						li.section-3__item(data-elmove="true" data-dur="1.3" data-delay="0.3" data-left="0" data-top="200")
 							i.icon.icon_mobile
 							p.section-3__item-text.section-3__item-text_mobile Дизайн корпортала
-						li.section-3__item
+						li.section-3__item(data-elmove="true" data-dur="1.3" data-delay="0.6" data-left="0" data-top="200")
 							i.icon.icon_1c
 							p.section-3__item-text.section-3__item-text_1c Интеграция с производственным календарем из 1С
+
 	section.section-4
 		.container
 			.row
 				.col-xs-6.col-xs-offset-6
 					.title.section-4__title-parent
 						h2.section-4__title ОСОБЕННЫЙ ДИЗАЙН
-						.hr.hr__border.hr_white
+						.hr.hr__border.hr_white.hr_left
 					p.section-4__description Нами был разработан и внедрен индивидуальный дизайн в соответствии с фирменным стилем компании и внедрен индивидуальный дизайн в соответствии с фирменным стилем компании.
+
 	section.section-5
 		.container
 			.row
@@ -93,19 +98,39 @@ block content
 					p.section-5__description Мы развернули портал на платформе "1С Битрикс: Внутренний портал государственной организации", установили на него CRM-систему, реализовали английскую версию портала и синхронизировали его с «1С Предприятие 8.2: Зарплата и управление персоналом»
 				.col-xs-12
 					ul.section-5__navigation.sync
-						li.sync__item Данные о зарплате
+						li.sync__item.active Данные о зарплате
 						li.sync__item График отсутствия
-						li.sync__item.active Документооборот
+						li.sync__item Документооборот
 				.col-xs-12
-					.sync__description
-						ul.section-5__list
-							li.section-5__item Предусмотрена возможность делегирования функций, чтобы ассистент мог выполнять задание за своего руководителя;
-							li.section-5__item Для каждого из сотрудников настраивается доступ к типу документов;
-							li.section-5__item Доступен расширенный поиск документов по названию, номеру, дате и категории;
-							li.section-5__item Реализована возможность создания документов по шаблону: выбирается категория и шаблон,  заполняются необходимые поля и генерируется документ doc
+					.sync__descriptions
+						.sync__description
+							ul.section-5__list
+								li.section-5__item Предусмотрена возможность делегирования функций, чтобы ассистент мог выполнять задание за своего руководителя;
+								li.section-5__item Для каждого из сотрудников настраивается доступ к типу документов;
+								li.section-5__item Доступен расширенный поиск документов по названию, номеру, дате и категории;
+								li.section-5__item Реализована возможность создания документов по шаблону: выбирается категория и шаблон,  заполняются необходимые поля и генерируется документ doc
+						.sync__description
+							ul.section-5__list
+								li.section-5__item Предусмотрена возможность делегирования функций, чтобы ассистент мог выполнять задание за своего руководителя;
+								li.section-5__item Для каждого из сотрудников настраивается доступ к типу документов;
+								li.section-5__item Доступен расширенный поиск документов по названию, номеру, дате и категории;
+								li.section-5__item Реализована возможность создания документов по шаблону: выбирается категория и шаблон,  заполняются необходимые поля и генерируется документ doc
+						.sync__description
+							ul.section-5__list
+								li.section-5__item Предусмотрена возможность делегирования функций, чтобы ассистент мог выполнять задание за своего руководителя;
+								li.section-5__item Для каждого из сотрудников настраивается доступ к типу документов;
+								li.section-5__item Доступен расширенный поиск документов по названию, номеру, дате и категории;
+								li.section-5__item Реализована возможность создания документов по шаблону: выбирается категория и шаблон,  заполняются необходимые поля и генерируется документ doc
 
 					.section-5__divece.divece
-						img(src="img/slide1.jpg", alt="").divece_img
+						.divece__slider
+							.divece__item
+								img(src="img/slide1.jpg", alt="").divece_img
+							.divece__item
+								img(src="img/slide1.jpg", alt="").divece_img
+							.divece__item
+								img(src="img/slide1.jpg", alt="").divece_img
+
 
 	section.section-6
 		.container
@@ -115,46 +140,87 @@ block content
 						h2.section-6__title ТЕХПОДДЕРЖКА
 						.hr.hr__border.hr_red.hr_center
 					p.section-6__description В рамках технической поддержки, команда РФПИ ставила перед нами все более сложные и интересные задачи:
-				.col-xs-12
-					.tech-item.section-6__tech-item
-						span.tech-item__number 1
-						img(src="img/tech1.jpg", alt="").tech-item__picture
-						.tech-item__desc
-							h2.tech-item__title СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ
-							p.tech-item__text Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.
-					.tech-item.section-6__tech-item
-						span.tech-item__number 1
-						img(src="img/tech1.jpg", alt="").tech-item__picture
-						.tech-item__desc
-							h2.tech-item__title СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ
-							p.tech-item__text Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.
-
-					.tech-item.section-6__tech-item
-						span.tech-item__number 1
-						img(src="img/tech1.jpg", alt="").tech-item__picture
-						.tech-item__desc
-							h2.tech-item__title СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ
-							p.tech-item__text Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.
-					.tech-item.section-6__tech-item
-						span.tech-item__number 1
-						img(src="img/tech1.jpg", alt="").tech-item__picture
-						.tech-item__desc
-							h2.tech-item__title СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ
-							p.tech-item__text Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.
-					.tech-item.section-6__tech-item
-						span.tech-item__number 1
-						img(src="img/tech1.jpg", alt="").tech-item__picture
-						.tech-item__desc
-							h2.tech-item__title СОТРУДНИКИ НА ИСПЫТАТЕЛЬНОМ СРОКЕ
-							p.tech-item__text Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.
+				.col-xs-12.tech-items
+					.tech-item-animate(data-elmove="true" data-dur="1" data-delay="0" data-left="0" data-top="-200" data-offset="0.3")
+						.tech-item
+							.tech-item__line.tech-item__line_img
+							.tech-item__line.tech-item__line_desc
+							span.tech-item__number.tech-item__number_no_padding 1
+							.tech-item__miniature.tech-item__miniature_no_padding
+								.tech-item__head-line.tech-item__head-line_img
+								img(src="img/tech1.jpg", alt="").tech-item__picture
+							.tech-item__desc.tech-item__desc_no_padding
+								.tech-item__head-line.tech-item__head-line_desc
+								h2.tech-item__title Сотрудники на испытательном сроке
+								.tech-item__text
+									p.tech-item__paragraph Нами разработан модуль «Probation period». При найме на работу сотрудника заносят в данный список, назначают руководителей и испытательный срок, по окончании которого руководители получают уведомление. Доступна выгрузка списка сотрудников, находящихся на испытательном сроке, в Excel.
+						.tech__line
+					.tech-item-animate(data-elmove="true" data-dur="1" data-delay="0" data-left="0" data-top="-200" data-offset="0.7")
+						.tech-item
+							.tech-item__line.tech-item__line_img
+							.tech-item__line.tech-item__line_desc
+							span.tech-item__number 2
+							.tech-item__miniature
+								.tech-item__head-line.tech-item__head-line_img
+								img(src="img/tech2.jpg", alt="").tech-item__picture
+							.tech-item__desc
+								.tech-item__head-line.tech-item__head-line_desc
+								h2.tech-item__title Оценка сотрудников
+								.tech-item__text
+									p.tech-item__paragraph Мы разработали модули для различных внутрених отчетов компании. Например, для налаживания эфективной оценки сотрудников был создан раздел "Годовая оценка деятельности"
+						.tech__line
+					.tech-item-animate(data-elmove="true" data-dur="1" data-delay="0" data-left="0" data-top="-200" data-offset="0.7")
+						.tech-item
+							.tech-item__line.tech-item__line_img
+							.tech-item__line.tech-item__line_desc
+							span.tech-item__number 3
+							.tech-item__miniature
+								.tech-item__head-line.tech-item__head-line_img
+								img(src="img/tech3.jpg", alt="").tech-item__picture
+							.tech-item__desc
+								.tech-item__head-line.tech-item__head-line_desc
+								h2.tech-item__title Отчет WEEKLY REPPORT
+								.tech-item__text
+									p.tech-item__paragraph Еженедельно и ежемесячно пользователям из группы "HR Manager" отсылается специолезированная отчетность.
+									p.tech-item__paragraph Все проекты создаются и редактируются в разделе "Companies and Project". Для данного раздела делается отдельный специолизированный бэкап для возможности контроля изменений.
+						.tech__line
+					.tech-item-animate(data-elmove="true" data-dur="1" data-delay="0" data-left="0" data-top="-200" data-offset="0.7")
+						.tech-item
+							.tech-item__line.tech-item__line_img
+							.tech-item__line.tech-item__line_desc
+							span.tech-item__number 4
+							.tech-item__miniature
+								.tech-item__head-line.tech-item__head-line_img
+								img(src="img/tech4.jpg", alt="").tech-item__picture
+							.tech-item__desc
+								.tech-item__head-line.tech-item__head-line_desc
+								h2.tech-item__title Анкеты 360 review
+								.tech-item__text
+									p.tech-item__paragraph Оценка "360 градусов" - это получение данных о действиях человека в реальных рабочих ситуациях и о проявленных им деловых качествах. Информация при этом, получают от людей, общающихся с человеком на разных уровнях: начальника, коллег, подчиненного и клиентов.
+						.tech__line
+					.tech-item-animate(data-elmove="true" data-dur="1" data-delay="0" data-left="0" data-top="-200" data-offset="0.7")
+						.tech-item
+							.tech-item__line.tech-item__line_img
+							.tech-item__line.tech-item__line_desc
+							span.tech-item__number 5
+							.tech-item__miniature
+								.tech-item__head-line.tech-item__head-line_img
+								img(src="img/tech5.jpg", alt="").tech-item__picture
+							.tech-item__desc
+								.tech-item__head-line.tech-item__head-line_desc
+								h2.tech-item__title Модуль KPI
+								.tech-item__text
+									p.tech-item__paragraph Работа по KPI позволяет специолистам лучше понимать, что им нужно делать, чтобы быть эффективными. Данный модуль позволяем выставлять сотрудникам цели, которые должны быть достигнуты на определанный период.
+									p.tech-item__paragraph А затем другие сотрудники могут оценить и оставить комментарий, насколько достигнута данная цель.
+						.tech__line
 
 	section.section-7
 		.container
 			.row
 				.col-xs-6.col-xs-offset-6
-					.title
+					.title.section-7__title-parent
 						h2.section-7__title МОБИЛЬНАЯ ВЕРСИЯ
-						.hr.hr__border.hr_white
+						.hr.hr__border.hr_white.hr_left
 					p.section-7__description Потребность пользователей работать с порталом вне офиса определила необходимость в мобильной версии. 
 					p.section-7__description Мы разработали мобильную версию разделов по отчетности, адптировали ее под планшеты.
 
@@ -170,13 +236,17 @@ block content
 				.col-xs-12
 					ul.section-8__list
 						li.section-8__item
-							p.section-8__top 3
+							p.section-8__top
+								span.section-8__number 3
 							p.section-8__item-text уникальных сложнейших модуля
 						li.section-8__item
-							p.section-8__top 3 года
+							p.section-8__top
+								span.section-8__number 3
+								|  года
 							p.section-8__item-text эффективного сотрудничества
 						li.section-8__item
-							p.section-8__top 24/7
+							p.section-8__top
+								span.section-8__number 24/7
 							p.section-8__item-text поддержка работы портала
 
 
