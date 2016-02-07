@@ -4,6 +4,14 @@ $(document).ready(function() {
 		$('input.data-inputmask').mask("+7 (999) 999-99-99");
 	}
 
+	$('.section-1__down').click(function() {
+		if($('section').is('.section-2')){
+			var scrollLastForm = $('.section-2').offset().top-110;
+			$('body,html').animate({scrollTop:scrollLastForm},800);
+		}	
+		return false;
+	});
+
 	var descriptions = $('.sync__descriptions').owlCarousel({
 		loop: true,
 		nav: false,
@@ -29,9 +37,9 @@ $(document).ready(function() {
 
 	function number () {
 		var date = new Date(),
-				year = { begin: date.getYear(), end: 2011, sum: 0},
-				numone = { begin: 0, end: 10, sum: 0},
-				numtwo = { begin: 0, end: 25, sum: 0},
+				year = { begin: parseInt(date.getFullYear()), end: parseInt($('#year').data('end')), sum: 0},
+				numone = { begin: parseInt($('#numone').text()), end: parseInt($('#numone').data('end')), sum: 0},
+				numtwo = { begin: parseInt($('#numtwo').text()), end: parseInt($('#numtwo').data('end')), sum: 0},
 				interval = 10000/numtwo;
 
 		year.sum = (year.begin - year.end)/25; 
@@ -43,14 +51,17 @@ $(document).ready(function() {
 		var timer = setInterval(function(){
 			numtwo.begin += numtwo.sum;
 			numone.begin += numone.sum;
-			year.end += year.sum;
-			if(numtwo.begin > numtwo.end) clearInterval(timer);
-			console.log(year.end+" - "+ numone.begin+" - "+ numtwo.begin);
-		}, interval);
+			year.begin -= year.sum;
+
+			$('#year').text(Math.round(year.begin));
+			$('#numone').text(Math.round(numone.begin));
+			$('#numtwo').text(Math.round(numtwo.begin));
+
+			if(Math.round(numtwo.begin) >= numtwo.end) clearInterval(timer);
+		}, 60);
 
 	}
 
-	number()
 
 	function animation_init() {
 		move_el_init($('*[data-elmove="true"]'));
@@ -128,9 +139,9 @@ var tech = [];
 
 $(".tech-item-animate").each(function (i) {
 	var top = $(this).offset().top,
-			height = $(this).height(),
-			dtop = $(this).data('top');
-	tech[i] = { elm: $(this), top: top - dtop, bottom: top + height - dtop }
+		height = $(this).innerHeight(),
+		dtop = $(this).data('top');
+	tech[i] = { elm: $(this), top: top - dtop, bottom: top + height - dtop, height: height }
 });
 
 	$(window).scroll(function(){
@@ -138,13 +149,21 @@ $(".tech-item-animate").each(function (i) {
 
 		var wh = $(window).height(),
 				wpos = $(window).scrollTop(),
-				wtop = wh + wpos-wh*0.6;
+				wtop = wh + wpos-wh*0.5,
+				wnum = wh + wpos-wh*0.3;
 		$('.tech-item__number.active').removeClass('active');
 		tech.forEach(function(item, i) {
 			if(item.top < wtop && item.bottom > wtop){
 					item.elm.find('.tech-item__number').addClass('active');
 				}
+			//console.log(i + " - " + item.top + " - " + wtop + " - " + item.bottom+ " - " + item.height)
 		});
+
+
+		if($('.section-2__list').offset().top < wnum && !$('.section-2__list').hasClass('active')){
+			$('.section-2__list').addClass('active');
+			number();
+		}
 
 		/*$(".tech-item__number.active").removeClass('active');
 		$(".tech-item__number").each(function () {
@@ -152,11 +171,18 @@ $(".tech-item-animate").each(function (i) {
 		});*/
 		
 
-/*		if(wp > 0)
-			$('nav.nav-top').addClass('nav-fixed')
-		else
-			$('nav.nav-top').removeClass('nav-fixed')*/
+		if(wpos > 0){
+			$('nav.nav-top').addClass('nav-fixed');
+			$('nav.nav-top').removeClass('nav-in-up');
+		}
+		else{
+			$('nav.nav-top').removeClass('nav-fixed');
+			$('nav.nav-top').addClass('nav-in-up');
+		}
 	});
+
+
+	
 
 
 });
