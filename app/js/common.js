@@ -15,6 +15,7 @@ $(document).ready(function() {
 	var descriptions = $('.sync__descriptions').owlCarousel({
 		loop: true,
 		nav: false,
+		autoHeight: true,
 		mouseDrag: false,
 		touchDrag: false,
 		items: 1
@@ -135,17 +136,20 @@ function check_pos(bl) {
 	}
 }
 
-var tech = [];
 
-$(".tech-item-animate").each(function (i) {
-	var top = $(this).offset().top,
-		height = $(this).innerHeight(),
-		dtop = $(this).data('top');
-	tech[i] = { elm: $(this), top: top - dtop, bottom: top + height - dtop, height: height }
-});
 
 	$(window).scroll(function(){
 		move_el_action($('*[data-elmove="true"]'));
+
+		var tech = [];
+
+		$(".tech-item-animate").each(function (i) {
+			var top = $(this).offset().top,
+				height = $(this).outerHeight(),
+				dtop = $(this).data('top');
+				if($(this).hasClass('animation_done__')) dtop = 0
+			tech[i] = { elm: $(this), top: top - dtop, bottom: top + height - dtop, height: height }
+		});
 
 		var wh = $(window).height(),
 				wpos = $(window).scrollTop(),
